@@ -11,7 +11,7 @@ const Room = require('./models/room');
 var io = require('socket.io')(server);
 
 const mongoose = require('mongoose');
-const DB = "mongodb://lmar11:12345@ac-gme4avc-shard-00-00.pxkawoa.mongodb.net:27017,ac-gme4avc-shard-00-01.pxkawoa.mongodb.net:27017,ac-gme4avc-shard-00-02.pxkawoa.mongodb.net:27017/dbGame?ssl=true&replicaSet=atlas-bwkzua-shard-0&authSource=admin&retryWrites=true&w=majority";
+const DB = "your_connection_to_mongodb";
 
 io.on('connection', (socket) => {
     console.log("Conectado al socket", socket.id);
